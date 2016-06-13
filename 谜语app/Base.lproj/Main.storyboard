@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="one" id="BYZ-38-t0r" customClass="FYViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gSf-Oy-oDH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sXu-Gj-5cx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-TN-xMS">
+                                <rect key="frame" x="177" y="523" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cm5-XO-lQv"/>
+                                    <constraint firstAttribute="width" constant="60" id="Pgg-d5-DXS"/>
+                                    <constraint firstAttribute="width" secondItem="ZSX-TN-xMS" secondAttribute="height" multiplier="2:1" id="XLr-gJ-fyQ"/>
+                                </constraints>
+                                <state key="normal" title="显示谜底">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqd-U2-tQm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜字谜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ain-yS-xh5">
+                                <rect key="frame" x="14" y="130" width="386" height="41"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="386" id="ZCp-8v-AUT"/>
+                                    <constraint firstAttribute="height" constant="41" id="bdq-Rq-DGJ"/>
+                                    <constraint firstAttribute="width" secondItem="Ain-yS-xh5" secondAttribute="height" multiplier="386:41" id="tNo-UU-LkK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdv-HJ-wwd">
+                                <rect key="frame" x="151" y="448" width="112" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hdv-HJ-wwd" secondAttribute="height" multiplier="112:43" id="LaZ-Xr-fPT"/>
+                                    <constraint firstAttribute="height" constant="43" id="gQV-RM-hBH"/>
+                                    <constraint firstAttribute="width" constant="112" id="hyQ-2z-0QV"/>
+                                </constraints>
+                                <state key="normal" title="显示谜语">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbw-sE-RC8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="谜底" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIg-j7-omX">
+                                <rect key="frame" x="159" y="264" width="97" height="37"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="COb-To-joN"/>
+                                    <constraint firstAttribute="height" constant="37" id="OhG-aQ-1fM"/>
+                                    <constraint firstAttribute="width" secondItem="oIg-j7-omX" secondAttribute="height" multiplier="97:37" id="lSb-yB-2ch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.421239327" green="0.73421770269999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oIg-j7-omX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="264" id="1LX-Gf-0JX"/>
+                            <constraint firstItem="Ain-yS-xh5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="G7l-6y-fBY"/>
+                            <constraint firstItem="Ain-yS-xh5" firstAttribute="top" secondItem="gSf-Oy-oDH" secondAttribute="bottom" constant="110" id="JVC-Y5-A8u"/>
+                            <constraint firstItem="sXu-Gj-5cx" firstAttribute="top" secondItem="ZSX-TN-xMS" secondAttribute="bottom" constant="183" id="L6q-o3-4d1"/>
+                            <constraint firstItem="oIg-j7-omX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="159" id="c1V-w8-u3I"/>
+                            <constraint firstItem="ZSX-TN-xMS" firstAttribute="top" secondItem="hdv-HJ-wwd" secondAttribute="bottom" constant="32" id="nyE-Wi-CTN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSX-TN-xMS" secondAttribute="trailing" constant="157" id="uTC-Uq-Cy2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hdv-HJ-wwd" secondAttribute="trailing" constant="131" id="wI5-DF-7G9"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="oIg-j7-omX" id="g9r-gz-w5d"/>
+                        <outlet property="questionLabel" destination="Ain-yS-xh5" id="QcD-Xe-inK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="166"/>
+        </scene>
+    </scenes>
+</document>
